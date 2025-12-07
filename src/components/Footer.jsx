@@ -11,9 +11,9 @@ const Footer = () => {
                     {/* Column 1: Brand & About */}
                     <div>
                         <Link to="/" className="flex items-center mb-4 gap-3">
-                            <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 w-auto" />
+                            <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 w-auto bg-white p-2 rounded-lg" />
                             <span className="text-2xl font-bold text-white">
-                                Neat<span className="text-blue-500">Nexus</span>
+                                <span className="text-blue-500"> NEAT NEXUS</span>
                             </span>
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
