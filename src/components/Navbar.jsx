@@ -38,7 +38,8 @@ export default function Navbar() {
             }`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">
                 {/* Logo */}
-                <Link to="/" className="flex items-center animate-fade-in-down">
+                <Link to="/" className="flex items-center animate-fade-in-down gap-3">
+                    <img src="/logo.png" alt="Neat Nexus Logo" className="h-16 md:h-20 w-auto" />
                     <h1 className="text-2xl font-bold text-slate-900 tracking-tight">
                         NEAT <span className="text-[#1A73E8]">NEXUS</span>
                     </h1>
