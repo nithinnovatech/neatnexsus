@@ -1,78 +1,109 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroSlider from "../components/Hero";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+
+const testimonials = [
+    {
+        name: "Sarah Mitchell",
+        role: "Homeowner",
+        content: "Neat Nexus transformed our home! The housekeeping team is thorough, professional, and trustworthy. Highly recommended!"
+    },
+    {
+        name: "James Carter",
+        role: "Office Manager",
+        content: "Their security services are top-notch. We feel completely safe knowing their team is guarding our premises 24/7."
+    },
+    {
+        name: "Emily Chen",
+        role: "Event Planner",
+        content: "I hired them for event assistance, and they handled everything seamlessly. It made my job so much easier!"
+    },
+    {
+        name: "David Wilson",
+        role: "Hotel Manager",
+        content: "The staff they provided were well-trained and professional. Neat Nexus is our go-to for manpower solutions."
+    },
+    {
+        name: "Priya Patel",
+        role: "Tech Startup CEO",
+        content: "Their digital solutions team revamped our entire IT infrastructure. Efficient, modern, and very reliable service."
+    }
+];
 
 export default function Home() {
     return (
-        <div className="pt-24 md:pt-32">
+        <div className="pt-24 md:pt-32 bg-home-dark min-h-screen">
 
             {/* ================= HERO SECTION ================= */}
             <HeroSlider />
 
-            <section className="bg-[#F8FAFB] py-8 animate-fade-in-up">
+            <section className="py-8 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-6 text-center">
-                    <h1 className="text-3xl md:text-4xl font-bold text-[#1A73E8]">Welcome to Neat Nexus</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold text-white">Welcome to Neat Nexus</h1>
                 </div>
             </section>
 
             {/* ================= ABOUT PREVIEW ================= */}
-            <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center animate-fade-in-up">
-                <div className="order-2 md:order-1">
-                    <div className="inline-block px-4 py-1 bg-[#1A73E8]/10 text-[#1A73E8] rounded-full text-sm font-semibold mb-4 animate-fade-in">
-                        ABOUT US
-                    </div>
-                    <h2 className="text-3xl font-bold text-[#1A73E8] mb-4 animate-fade-in-up">Your Trusted Lifestyle Partner</h2>
-                    <p className="text-gray-600 leading-relaxed text-lg mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                        Neat Nexus is your premier provider for comprehensive home and business management solutions.
-                        We offer professional housekeeping, security services, event assistance, digital solutions, and
-                        gardening expertise. Our mission is to create seamless, efficient, and beautiful environments
-                        for our clients, allowing you to focus on what truly matters.
-                    </p>
-
-                    <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                        <a
-                            href="/about"
-                            className="bg-[#1A73E8] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1766CE] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                        >
-                            Learn More
-                        </a>
-                        <a
-                            href="/contact"
-                            className="border-2 border-[#1A73E8] text-[#1A73E8] px-6 py-3 rounded-lg font-semibold hover:bg-[#1A73E8] hover:text-white transition"
-                        >
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-
-                <div className="order-1 md:order-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                    <div className="relative">
-                        <img
-                            src="/homeabout.png"
-                            alt="Neat Nexus Team"
-                            className="rounded-2xl shadow-xl object-cover w-full h-full"
-                        />
-                        <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#1A73E8] rounded-2xl shadow-lg flex items-center justify-center animate-float z-10">
-                            <span className="text-white text-3xl font-bold">500+</span>
+            <section className="bg-home-dark-alt py-20 animate-fade-in-up">
+                <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                    <div className="order-2 md:order-1">
+                        <div className="inline-block px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-lg font-semibold mb-6 animate-fade-in">
+                            ABOUT US
                         </div>
-                        <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#1A73E8] rounded-2xl shadow-lg flex items-center justify-center opacity-90 animate-float z-10" style={{ animationDelay: '1.5s' }}>
-                            <span className="text-white text-lg font-semibold text-center px-2">Happy Clients</span>
+                        <h2 className="text-3xl font-bold text-white mb-4 animate-fade-in-up">Your Trusted Lifestyle Partner</h2>
+                        <p className="text-gray-300 leading-relaxed text-lg mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                            Neat Nexus is your premier provider for comprehensive home and business management solutions.
+                            We offer professional housekeeping, security services, event assistance, digital solutions, and
+                            gardening expertise. Our mission is to create seamless, efficient, and beautiful environments
+                            for our clients, allowing you to focus on what truly matters.
+                        </p>
+
+                        <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                            <a
+                                href="/about"
+                                className="bg-[#1A73E8] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1766CE] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                            >
+                                Learn More
+                            </a>
+                            <a
+                                href="/contact"
+                                className="border-2 border-[#1A73E8] text-[#1A73E8] px-6 py-3 rounded-lg font-semibold hover:bg-[#1A73E8] hover:text-white transition"
+                            >
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="order-1 md:order-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                        <div className="relative">
+                            <img
+                                src="/homeabout.png"
+                                alt="Neat Nexus Team"
+                                className="rounded-2xl shadow-xl object-cover w-full h-full"
+                            />
+                            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#1A73E8] rounded-2xl shadow-lg flex items-center justify-center animate-float z-10">
+                                <span className="text-white text-3xl font-bold">500+</span>
+                            </div>
+                            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#1A73E8] rounded-2xl shadow-lg flex items-center justify-center opacity-90 animate-float z-10" style={{ animationDelay: '1.5s' }}>
+                                <span className="text-white text-lg font-semibold text-center px-2">Happy Clients</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ================= SERVICES ================= */}
-            <section className="bg-white py-20 animate-fade-in-up">
+            <section className="py-20 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 py-1 bg-[#1A73E8]/10 text-[#1A73E8] rounded-full text-sm font-semibold mb-4">
+                        <div className="inline-block px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-lg font-semibold mb-6">
                             OUR SERVICES
                         </div>
-                        <h2 className="text-3xl font-bold text-[#1A73E8] mb-4">
+                        <h2 className="text-3xl font-bold text-white mb-4">
                             Professional Services
                         </h2>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-300 text-lg">
                             Tailored solutions designed to meet your specific needs with excellence and care.
                         </p>
                     </div>
@@ -127,16 +158,16 @@ export default function Home() {
             </section>
 
             {/* ================= WHY CHOOSE US ================= */}
-            <section className="bg-gradient-to-br from-white to-[#F8FAFB] py-20 animate-fade-in-up">
+            <section className="bg-home-dark-alt py-20 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 py-1 bg-[#1A73E8]/10 text-[#1A73E8] rounded-full text-sm font-semibold mb-4">
+                        <div className="inline-block px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-lg font-semibold mb-6">
                             WHY CHOOSE US
                         </div>
-                        <h2 className="text-3xl font-bold text-[#1A73E8] mb-4">
+                        <h2 className="text-3xl font-bold text-white mb-4">
                             Why Choose Neat Nexus?
                         </h2>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-300 text-lg">
                             We go above and beyond to provide fast, friendly, and reliable service tailored to you.
                         </p>
                     </div>
@@ -173,36 +204,22 @@ export default function Home() {
             </section>
 
             {/* ================= TESTIMONIALS ================= */}
-            <section className="bg-white py-20 animate-fade-in-up">
+            <section className="py-20 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 py-1 bg-[#1A73E8]/10 text-[#1A73E8] rounded-full text-sm font-semibold mb-4">
+                        <div className="inline-block px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-lg font-semibold mb-6">
                             TESTIMONIALS
                         </div>
-                        <h2 className="text-3xl font-bold text-[#1A73E8] mb-4">
+                        <h2 className="text-3xl font-bold text-white mb-4">
                             What Our Clients Say
                         </h2>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-300 text-lg">
                             See how we've helped households and businesses create better environments.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8 mt-10">
-                        <TestimonialCard
-                            name="Sarah Mitchell"
-                            role="Homeowner"
-                            content="Neat Nexus transformed our home! The housekeeping team is thorough, professional, and trustworthy. Highly recommended!"
-                        />
-                        <TestimonialCard
-                            name="James Carter"
-                            role="Office Manager"
-                            content="Their security services are top-notch. We feel completely safe knowing their team is guarding our premises 24/7."
-                        />
-                        <TestimonialCard
-                            name="Emily Chen"
-                            role="Event Planner"
-                            content="I hired them for event assistance, and they handled everything seamlessly. It made my job so much easier!"
-                        />
+                    <div className="mt-10">
+                        <TestimonialCarousel testimonials={testimonials} />
                     </div>
                 </div>
             </section>
@@ -240,15 +257,15 @@ export default function Home() {
 /* Reusable Service Preview Box */
 function ServiceBox({ title, icon, desc }) {
     return (
-        <div className="p-8 bg-white shadow-lg rounded-2xl hover:shadow-xl transition transform hover:-translate-y-2 border border-gray-100 hover:border-[#1A73E8]/30 group animate-fade-in-up">
-            <div className="w-16 h-16 bg-[#1A73E8]/10 rounded-xl flex items-center justify-center text-3xl text-[#1A73E8] mb-6 group-hover:bg-[#1A73E8] group-hover:text-white transition-all duration-300">
+        <div className="p-8 bg-white/5 backdrop-blur-sm shadow-lg rounded-2xl hover:shadow-xl transition transform hover:-translate-y-2 border border-white/10 hover:border-blue-500/30 group animate-fade-in-up">
+            <div className="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center text-3xl text-blue-400 mb-6 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
                 {icon}
             </div>
 
-            <h3 className="text-xl font-bold text-[#1A73E8] mb-3">{title}</h3>
-            <p className="text-gray-600 leading-relaxed">{desc}</p>
+            <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
+            <p className="text-gray-300 leading-relaxed">{desc}</p>
 
-            <Link to="/services" className="mt-6 flex items-center text-[#1A73E8] font-semibold group-hover:text-[#1A73E8] transition-colors">
+            <Link to="/services" className="mt-6 flex items-center text-blue-400 font-semibold group-hover:text-blue-300 transition-colors">
                 <span>Learn more</span>
                 <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -260,19 +277,19 @@ function ServiceBox({ title, icon, desc }) {
 
 function TestimonialCard({ name, role, content }) {
     return (
-        <div className="p-8 bg-[#F8FAFB] rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2 border border-gray-100 group animate-fade-in-up">
+        <div className="p-8 bg-white/5 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2 border border-white/10 group animate-fade-in-up">
             <div className="flex flex-col h-full justify-between">
                 <div>
-                    <div className="mb-4 text-[#1A73E8]">
+                    <div className="mb-4 text-blue-400">
                         <svg className="w-8 h-8 opacity-50" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14.017 21L14.017 18C14.017 16.896 14.353 15.908 15.025 15.036C15.698 14.164 16.591 13.728 17.703 13.728H19.231C19.231 12.677 18.914 11.677 18.281 10.728C17.648 9.778 16.815 9.077 15.783 8.625V5.127C17.688 5.672 19.349 6.786 20.767 8.469C22.184 10.152 22.893 12.164 22.893 14.504V21H14.017ZM5.016 21L5.016 18C5.016 16.896 5.352 15.908 6.024 15.036C6.697 14.164 7.59 13.728 8.702 13.728H10.23C10.23 12.677 9.913 11.677 9.28 10.728C8.647 9.778 7.814 9.077 6.781 8.625V5.127C8.687 5.672 10.348 6.786 11.766 8.469C13.183 10.152 13.892 12.164 13.892 14.504V21H5.016Z" />
                         </svg>
                     </div>
-                    <p className="text-gray-600 italic mb-6">"{content}"</p>
+                    <p className="text-gray-300 italic mb-6">"{content}"</p>
                 </div>
                 <div>
-                    <h4 className="font-bold text-[#1A73E8] text-lg">{name}</h4>
-                    <span className="text-sm text-gray-500 font-medium">{role}</span>
+                    <h4 className="font-bold text-white text-lg">{name}</h4>
+                    <span className="text-sm text-gray-400 font-medium">{role}</span>
                 </div>
             </div>
         </div>

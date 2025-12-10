@@ -10,7 +10,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-home-dark">
             {/* Hero Section */}
             <PageHeader
                 title="Contact Us"
@@ -23,9 +23,9 @@ const Contact = () => {
                     <div className="flex flex-col lg:flex-row gap-10">
 
                         {/* Contact Information */}
-                        <div className="w-full lg:w-1/3 bg-blue-900 text-white p-10 rounded-2xl shadow-xl h-fit">
+                        <div className="w-full lg:w-1/3 bg-blue-900/50 backdrop-blur-md text-white p-10 rounded-2xl shadow-xl h-fit border border-blue-500/30">
                             <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
-                            <p className="text-blue-200 mb-10 leading-relaxed">
+                            <p className="text-blue-100 mb-10 leading-relaxed">
                                 Fill out the form or reach out to us directly through phone or email. We are here to answer your questions and discuss your needs.
                             </p>
 
@@ -65,24 +65,24 @@ const Contact = () => {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="w-full lg:w-2/3 bg-white p-10 rounded-2xl shadow-xl">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Message</h2>
+                        <div className="w-full lg:w-2/3 bg-white/5 backdrop-blur-sm p-10 rounded-2xl shadow-xl border border-white/10">
+                            <h2 className="text-3xl font-bold text-white mb-8">Send Message</h2>
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label className="block text-gray-700 font-medium mb-2">First Name</label>
+                                        <label className="block text-gray-300 font-medium mb-2">First Name</label>
                                         <input
                                             type="text"
-                                            className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                                            className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-white placeholder-gray-400"
                                             placeholder="John"
                                             required
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-gray-700 font-medium mb-2">Last Name</label>
+                                        <label className="block text-gray-300 font-medium mb-2">Last Name</label>
                                         <input
                                             type="text"
-                                            className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                                            className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-white placeholder-gray-400"
                                             placeholder="Doe"
                                             required
                                         />
@@ -91,29 +91,29 @@ const Contact = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label className="block text-gray-700 font-medium mb-2">Email Address</label>
+                                        <label className="block text-gray-300 font-medium mb-2">Email Address</label>
                                         <input
                                             type="email"
-                                            className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                                            className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-white placeholder-gray-400"
                                             placeholder="john@example.com"
                                             required
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                        <label className="block text-gray-300 font-medium mb-2">Phone Number</label>
                                         <input
                                             type="tel"
-                                            className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                                            className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-white placeholder-gray-400"
                                             placeholder="+91 98765 00000"
                                         />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label className="block text-gray-700 font-medium mb-2">Message</label>
+                                    <label className="block text-gray-300 font-medium mb-2">Message</label>
                                     <textarea
                                         rows="5"
-                                        className="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+                                        className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors text-white placeholder-gray-400"
                                         placeholder="How can we help you?"
                                         required
                                     ></textarea>

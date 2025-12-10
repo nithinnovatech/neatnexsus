@@ -15,9 +15,9 @@ const BlogPost = () => {
 
     if (!post) {
         return (
-            <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">Post Not Found</h2>
-                <Link to="/blogs" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
+            <div className="min-h-screen flex flex-col items-center justify-center bg-home-dark">
+                <h2 className="text-3xl font-bold text-white mb-4">Post Not Found</h2>
+                <Link to="/blogs" className="text-blue-400 hover:text-blue-300 font-semibold flex items-center">
                     <ArrowLeft className="mr-2" /> Back to Blogs
                 </Link>
             </div>
@@ -25,14 +25,14 @@ const BlogPost = () => {
     }
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-home-dark">
             {/* Custom Header for Blog Post */}
             <div className="bg-[#1A73E8] pt-32 pb-20 md:pt-40 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-12 opacity-10">
                     <div className="w-64 h-64 rounded-full bg-white blur-3xl"></div>
                 </div>
                 <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-                    <Link to="/blogs" className="inline-flex items-center bg-white text-[#1A73E8] px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:scale-105 transition-all mb-8">
+                    <Link to="/blogs" className="inline-flex items-center bg-white/10 text-white px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:scale-105 transition-all mb-8 backdrop-blur-md hover:bg-white/20 border border-white/20">
                         <ArrowLeft size={20} className="mr-2" /> Back to Blogs
                     </Link>
                     <div className="block">
@@ -58,7 +58,7 @@ const BlogPost = () => {
 
             {/* Content Section */}
             <article className="max-w-4xl mx-auto px-6 py-16">
-                <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                     <img
                         src={post.image}
                         alt={post.title}
@@ -67,17 +67,17 @@ const BlogPost = () => {
                 </div>
 
                 <div
-                    className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6"
+                    className="prose prose-lg prose-invert max-w-none text-gray-300 leading-relaxed space-y-6"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 >
                     {/* Content injected here */}
                 </div>
 
-                <div className="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center">
-                    <div className="text-gray-500 italic">
+                <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+                    <div className="text-gray-400 italic">
                         Shared by {post.author}
                     </div>
-                    <button className="flex items-center text-[#1A73E8] font-bold hover:text-[#1557B0] transition-colors">
+                    <button className="flex items-center text-blue-400 font-bold hover:text-blue-300 transition-colors">
                         <Share2 size={20} className="mr-2" /> Share Post
                     </button>
                 </div>

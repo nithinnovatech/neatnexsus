@@ -65,12 +65,12 @@ const Services = () => {
     ];
 
     return (
-        <div className="min-h-screen relative overflow-hidden">
+        <div className="min-h-screen relative overflow-hidden bg-home-dark">
             {/* Background Decorations */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-                <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl opacity-60 mix-blend-multiply"></div>
-                <div className="absolute bottom-[10%] right-[-5%] w-[600px] h-[600px] bg-indigo-100/50 rounded-full blur-3xl opacity-60 mix-blend-multiply"></div>
-                <div className="absolute top-[40%] right-[20%] w-[300px] h-[300px] bg-slate-100/60 rounded-full blur-3xl opacity-50 mix-blend-multiply"></div>
+                <div className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
+                <div className="absolute bottom-[10%] right-[-5%] w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-3xl opacity-60 mix-blend-screen"></div>
+                <div className="absolute top-[40%] right-[20%] w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-3xl opacity-50 mix-blend-screen"></div>
             </div>
 
             <div className="relative z-10">

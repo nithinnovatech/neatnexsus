@@ -59,7 +59,7 @@ const ServiceCard = ({ title, description, icon, image, index, colorTheme = "blu
 
     return (
         <div
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 border border-gray-100 flex flex-col h-full animate-fade-in-up"
+            className="group bg-white/5 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2 border border-white/10 flex flex-col h-full animate-fade-in-up"
             style={{ animationDelay: `${index * 0.1}s` }}
         >
             {/* Image Section */}
@@ -80,10 +80,10 @@ const ServiceCard = ({ title, description, icon, image, index, colorTheme = "blu
                     {React.cloneElement(icon, { size: 32, className: "currentColor" })}
                 </div>
 
-                <h3 className={`text-2xl font-bold text-gray-900 mb-3 ${theme.hoverText} transition-colors`}>
+                <h3 className={`text-2xl font-bold text-white mb-3 ${theme.hoverText} transition-colors`}>
                     {title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6 line-clamp-3 flex-grow">
+                <p className="text-gray-300 leading-relaxed mb-6 line-clamp-3 flex-grow">
                     {description}
                 </p>
 

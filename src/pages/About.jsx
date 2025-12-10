@@ -34,7 +34,7 @@ const About = () => {
     ];
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-home-dark">
             {/* Hero Section */}
             <PageHeader
                 title="About Us"
@@ -52,24 +52,24 @@ const About = () => {
                             alt="Our Team"
                             className="rounded-2xl shadow-2xl w-full object-cover h-[500px]"
                         />
-                        <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block border-l-4 border-[#1A73E8]">
-                            <p className="text-[#1A73E8] font-bold text-lg mb-1">"Service is our passion."</p>
-                            <p className="text-gray-500 text-sm">- The Neat Nexus Team</p>
+                        <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-xl max-w-xs hidden md:block border-l-4 border-blue-500">
+                            <p className="text-blue-400 font-bold text-lg mb-1">"Service is our passion."</p>
+                            <p className="text-gray-300 text-sm">- The Neat Nexus Team</p>
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2">
                         <span className="text-[#1A73E8] font-bold uppercase tracking-wider text-sm mb-2 block">Our Story</span>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Building Trust Through Quality Service</h2>
-                        <p className="text-xl text-gray-600 mb-6 leading-relaxed">
+                        <h2 className="text-4xl font-bold text-white mb-6">Building Trust Through Quality Service</h2>
+                        <p className="text-xl text-gray-300 mb-6 leading-relaxed">
                             Established with a vision to simplify lifestyle management, Neat Nexus has grown from a small passionate team into a comprehensive service provider.
                         </p>
-                        <p className="text-gray-600 mb-6 leading-relaxed">
+                        <p className="text-gray-300 mb-6 leading-relaxed">
                             We understand the complexities of modern life and business. That's why we've curated a suite of services - from housekeeping to security, and event management to digital solutions - all designed to give you back your time and peace of mind.
                         </p>
                         <div className="grid grid-cols-2 gap-4 mt-8">
                             {['Professional Team', '24/7 Support', 'Custom Solutions', 'Affordable Rates'].map((item, i) => (
-                                <div key={i} className="flex items-center text-gray-700 font-medium">
-                                    <CheckCircle size={20} className="text-[#1A73E8] mr-2" />
+                                <div key={i} className="flex items-center text-gray-300 font-medium">
+                                    <CheckCircle size={20} className="text-blue-500 mr-2" />
                                     {item}
                                 </div>
                             ))}
@@ -79,42 +79,42 @@ const About = () => {
             </section>
 
             {/* Vision & Mission Cards - High Impact Design */}
-            <section className="py-20 bg-gray-50 relative overflow-hidden">
+            <section className="py-20 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
-                    <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#1A73E8] rounded-full blur-3xl"></div>
-                    <div className="absolute top-1/2 right-0 w-64 h-64 bg-blue-300 rounded-full blur-3xl"></div>
+                    <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+                    <div className="absolute top-1/2 right-0 w-64 h-64 bg-purple-500 rounded-full blur-3xl"></div>
                 </div>
 
                 <div className="max-w-7xl mx-auto px-6 relative z-10">
                     <div className="text-center mb-16">
-                        <span className="text-[#1A73E8] font-bold uppercase tracking-wider text-sm mb-2 block">Our Purpose</span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Driving Force Behind Our Success</h2>
+                        <span className="text-blue-400 font-bold uppercase tracking-wider text-sm mb-2 block">Our Purpose</span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">Driving Force Behind Our Success</h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                         {/* Mission Card */}
-                        <div className="group bg-white rounded-2xl p-10 shadow-xl border border-gray-100 relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-110"></div>
+                        <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl border border-white/10 relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-110"></div>
                             <div className="relative z-10">
-                                <div className="w-16 h-16 bg-[#1A73E8]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#1A73E8] transition-colors duration-300">
-                                    <Target size={32} className="text-[#1A73E8] group-hover:text-white transition-colors duration-300" />
+                                <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors duration-300">
+                                    <Target size={32} className="text-blue-400 group-hover:text-white transition-colors duration-300" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-                                <p className="text-gray-600 leading-relaxed text-lg">
+                                <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+                                <p className="text-gray-300 leading-relaxed text-lg">
                                     To empower individuals and businesses by providing top-tier management and support services. We aim to create environments that are safe, efficient, and inspiring, allowing our clients to thrive in their daily endeavors.
                                 </p>
                             </div>
                         </div>
 
                         {/* Vision Card */}
-                        <div className="group bg-white rounded-2xl p-10 shadow-xl border border-gray-100 relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-110"></div>
+                        <div className="group bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl border border-white/10 relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-110"></div>
                             <div className="relative z-10">
-                                <div className="w-16 h-16 bg-[#1A73E8]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#1A73E8] transition-colors duration-300">
-                                    <Eye size={32} className="text-[#1A73E8] group-hover:text-white transition-colors duration-300" />
+                                <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500 transition-colors duration-300">
+                                    <Eye size={32} className="text-blue-400 group-hover:text-white transition-colors duration-300" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-                                <p className="text-gray-600 leading-relaxed text-lg">
+                                <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
+                                <p className="text-gray-300 leading-relaxed text-lg">
                                     To be the globally recognized leader in integrated service solutions, setting the benchmark for quality, reliability, and innovation. We envision a future where Neat Nexus is synonymous with excellence in lifestyle management.
                                 </p>
                             </div>
@@ -126,17 +126,17 @@ const About = () => {
             {/* Core Values Section */}
             <section className="py-20 max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
-                    <span className="text-[#1A73E8] font-bold uppercase tracking-wider text-sm mb-2 block">Core Values</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What We Stand For</h2>
+                    <span className="text-blue-400 font-bold uppercase tracking-wider text-sm mb-2 block">Core Values</span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white">What We Stand For</h2>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {values.map((val, index) => (
-                        <div key={index} className="text-center p-6 rounded-xl hover:bg-gray-50 transition-colors duration-300">
-                            <div className="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6 text-[#1A73E8]">
+                        <div key={index} className="text-center p-6 rounded-xl hover:bg-white/5 transition-colors duration-300">
+                            <div className="w-16 h-16 mx-auto bg-blue-500/10 rounded-full flex items-center justify-center mb-6 text-blue-400">
                                 {val.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">{val.title}</h3>
-                            <p className="text-gray-600 leading-relaxed text-sm">
+                            <h3 className="text-xl font-bold text-white mb-3">{val.title}</h3>
+                            <p className="text-gray-300 leading-relaxed text-sm">
                                 {val.desc}
                             </p>
                         </div>
