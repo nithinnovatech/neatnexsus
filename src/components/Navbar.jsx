@@ -38,11 +38,15 @@ export default function Navbar() {
             }`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">
                 {/* Logo */}
-                <Link to="/" className="flex items-center animate-fade-in-down gap-3">
-                    <img src="/logo.png" alt="Neat Nexus Logo" className="h-20 md:h-24 w-auto" />
-                    <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
-                        <span className="text-[#1A73E8]">NEAT NEXUS</span>
-                    </h1>
+                <Link to="/" className="flex items-center animate-fade-in-down gap-2 group">
+                    <img src="/logo.png" alt="Neat Nexus Logo" className="h-10 sm:h-12 md:h-14 w-auto transition-transform group-hover:scale-105" />
+                    <div className="flex flex-col">
+                        <h1 className="text-base sm:text-lg md:text-xl font-extrabold tracking-tight leading-none">
+                            <span className="bg-gradient-to-r from-[#1A73E8] via-[#4285F4] to-[#1A73E8] bg-clip-text text-transparent">NEAT</span>
+                            <span className="text-slate-800 ml-0.5">NEXUS</span>
+                        </h1>
+                        <span className="text-[8px] sm:text-[9px] text-slate-500 font-medium tracking-wider uppercase hidden sm:block">Facility Management</span>
+                    </div>
                 </Link>
 
                 {/* Desktop Menu */}

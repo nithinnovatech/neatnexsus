@@ -17,7 +17,6 @@ function App() {
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
@@ -26,7 +25,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </main>
+   
         <Footer />
         <FloatingWhatsApp />
       </div>
