@@ -33,42 +33,41 @@ const testimonials = [
 
 export default function Home() {
     return (
-        <div className="pt-20 sm:pt-24 md:pt-32 bg-home-dark min-h-screen">
+        <div className="pt-16 sm:pt-20 md:pt-24 bg-home-dark min-h-screen">
 
             {/* ================= HERO SECTION ================= */}
             <HeroSlider />
 
-            <section className="py-6 sm:py-8 animate-fade-in-up">
+            <section className="py-4 sm:py-6 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Welcome to Neat Nexus</h1>
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Welcome to Neat Nexus</h1>
                 </div>
             </section>
 
             {/* ================= ABOUT PREVIEW ================= */}
-            <section className="bg-home-dark-alt py-12 sm:py-16 md:py-20 animate-fade-in-up">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <section className="bg-home-dark-alt py-8 sm:py-10 md:py-12 animate-fade-in-up">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
                     <div className="order-2 md:order-1">
-                        <div className="inline-block px-4 sm:px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm sm:text-lg font-semibold mb-4 sm:mb-6 animate-fade-in">
+                        <div className="inline-block px-3 sm:px-4 py-1.5 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4 animate-fade-in">
                             ABOUT US
                         </div>
-                        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 animate-fade-in-up">Your Trusted Lifestyle Partner</h2>
-                        <p className="text-gray-300 leading-relaxed text-base sm:text-lg mb-5 sm:mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3 animate-fade-in-up">Your Trusted Lifestyle Partner</h2>
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-base mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                             Neat Nexus is your premier provider for comprehensive home and business management solutions.
                             We offer professional housekeeping, security services, event assistance, digital solutions, and
-                            gardening expertise. Our mission is to create seamless, efficient, and beautiful environments
-                            for our clients, allowing you to focus on what truly matters.
+                            gardening expertise.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                        <div className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                             <a
                                 href="/about"
-                                className="bg-[#1A73E8] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#1766CE] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-center text-sm sm:text-base"
+                                className="bg-[#1A73E8] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#1766CE] transition transform hover:-translate-y-1 shadow-lg text-center text-sm"
                             >
                                 Learn More
                             </a>
                             <a
                                 href="/contact"
-                                className="border-2 border-[#1A73E8] text-[#1A73E8] px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#1A73E8] hover:text-white transition text-center text-sm sm:text-base"
+                                className="border-2 border-[#1A73E8] text-[#1A73E8] px-4 py-2 rounded-lg font-semibold hover:bg-[#1A73E8] hover:text-white transition text-center text-sm"
                             >
                                 Contact Us
                             </a>
@@ -80,13 +79,13 @@ export default function Home() {
                             <img
                                 src="/homeabout.png"
                                 alt="Neat Nexus Team"
-                                className="rounded-2xl shadow-xl object-cover w-full h-full"
+                                className="rounded-xl shadow-xl object-cover w-full h-auto max-h-64 md:max-h-80"
                             />
-                            <div className="hidden sm:flex absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 w-20 h-20 sm:w-24 sm:h-24 bg-[#1A73E8] rounded-2xl shadow-lg items-center justify-center animate-float z-10">
-                                <span className="text-white text-2xl sm:text-3xl font-bold">500+</span>
+                            <div className="hidden md:flex absolute -bottom-3 -left-3 w-16 h-16 bg-[#1A73E8] rounded-xl shadow-lg items-center justify-center animate-float z-10">
+                                <span className="text-white text-xl font-bold">500+</span>
                             </div>
-                            <div className="hidden sm:flex absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 bg-[#1A73E8] rounded-2xl shadow-lg items-center justify-center opacity-90 animate-float z-10" style={{ animationDelay: '1.5s' }}>
-                                <span className="text-white text-sm sm:text-lg font-semibold text-center px-2">Happy Clients</span>
+                            <div className="hidden md:flex absolute -top-3 -right-3 w-20 h-20 bg-[#1A73E8] rounded-xl shadow-lg items-center justify-center opacity-90 animate-float z-10" style={{ animationDelay: '1.5s' }}>
+                                <span className="text-white text-xs font-semibold text-center px-1">Happy Clients</span>
                             </div>
                         </div>
                     </div>
@@ -94,21 +93,21 @@ export default function Home() {
             </section>
 
             {/* ================= SERVICES ================= */}
-            <section className="py-12 sm:py-16 md:py-20 animate-fade-in-up">
+            <section className="py-8 sm:py-10 md:py-12 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 sm:px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm sm:text-lg font-semibold mb-4 sm:mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 animate-fade-in-up">
+                        <div className="inline-block px-3 sm:px-4 py-1.5 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm font-semibold mb-3">
                             OUR SERVICES
                         </div>
-                        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
+                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
                             Professional Services
                         </h2>
-                        <p className="text-gray-300 text-base sm:text-lg px-2">
+                        <p className="text-gray-300 text-sm sm:text-base px-2">
                             Tailored solutions designed to meet your specific needs with excellence and care.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
                         <ServiceBox
                             title="Housekeeping"
                             image="/housekeeping.jpg"
@@ -166,10 +165,10 @@ export default function Home() {
                         />
                     </div>
 
-                    <div className="text-center mt-10 sm:mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                    <div className="text-center mt-6 sm:mt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                         <a
                             href="/services"
-                            className="bg-[#1A73E8] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#1557B0] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                            className="bg-[#1A73E8] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1557B0] transition transform hover:-translate-y-1 shadow-lg text-sm"
                         >
                             View All Services
                         </a>
@@ -178,47 +177,47 @@ export default function Home() {
             </section>
 
             {/* ================= WHY CHOOSE US ================= */}
-            <section className="bg-home-dark-alt py-12 sm:py-16 md:py-20 animate-fade-in-up">
+            <section className="bg-home-dark-alt py-8 sm:py-10 md:py-12 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 sm:px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm sm:text-lg font-semibold mb-4 sm:mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 animate-fade-in-up">
+                        <div className="inline-block px-3 sm:px-4 py-1.5 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm font-semibold mb-3">
                             WHY CHOOSE US
                         </div>
-                        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
+                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
                             Why Choose Neat Nexus?
                         </h2>
-                        <p className="text-gray-300 text-base sm:text-lg px-2">
+                        <p className="text-gray-300 text-sm sm:text-base px-2">
                             We go above and beyond to provide fast, friendly, and reliable service tailored to you.
                         </p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mt-8 sm:mt-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
                         <ServiceBox
                             title="Highly Trained Professionals"
                             icon="👨‍💼"
-                            desc="Our team handles every project with the utmost care, respect, and professional expertise."
+                            desc="Our team handles every project with care and expertise."
                             gradient="from-indigo-500 to-purple-500"
                         />
 
                         <ServiceBox
                             title="Customized Service Plans"
                             icon="📋"
-                            desc="We understand that every client is unique, so we tailor our solutions to your specific requirements."
+                            desc="We tailor our solutions to your specific requirements."
                             gradient="from-cyan-500 to-blue-500"
                         />
 
                         <ServiceBox
                             title="100% Satisfaction Guarantee"
                             icon="✅"
-                            desc="We are committed to excellence and ensure you are completely satisfied with our work."
+                            desc="We ensure you are completely satisfied with our work."
                             gradient="from-emerald-500 to-green-500"
                         />
                     </div>
 
-                    <div className="text-center mt-10 sm:mt-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                    <div className="text-center mt-6 sm:mt-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                         <a
                             href="/contact"
-                            className="bg-[#1A73E8] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#1557B0] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                            className="bg-[#1A73E8] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#1557B0] transition transform hover:-translate-y-1 shadow-lg text-sm"
                         >
                             Get Started Today
                         </a>
@@ -227,48 +226,48 @@ export default function Home() {
             </section>
 
             {/* ================= TESTIMONIALS ================= */}
-            <section className="py-12 sm:py-16 md:py-20 animate-fade-in-up">
+            <section className="py-8 sm:py-10 md:py-12 animate-fade-in-up">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                    <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 animate-fade-in-up">
-                        <div className="inline-block px-4 sm:px-6 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm sm:text-lg font-semibold mb-4 sm:mb-6">
+                    <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 animate-fade-in-up">
+                        <div className="inline-block px-3 sm:px-4 py-1.5 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm font-semibold mb-3">
                             TESTIMONIALS
                         </div>
-                        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
+                        <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
                             What Our Clients Say
                         </h2>
-                        <p className="text-gray-300 text-base sm:text-lg px-2">
+                        <p className="text-gray-300 text-sm sm:text-base px-2">
                             See how we've helped households and businesses create better environments.
                         </p>
                     </div>
 
-                    <div className="mt-8 sm:mt-10">
+                    <div className="mt-4 sm:mt-6">
                         <TestimonialCarousel testimonials={testimonials} />
                     </div>
                 </div>
             </section>
 
             {/* ================= CTA ================= */}
-            <section className="bg-gradient-to-r from-[#1A73E8] to-[#1557B0] py-12 sm:py-16 md:py-20 text-center text-white animate-fade-in-up">
+            <section className="bg-gradient-to-r from-[#1A73E8] to-[#1557B0] py-8 sm:py-10 md:py-12 text-center text-white animate-fade-in-up">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 animate-fade-in-up">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 animate-fade-in-up">
                         We're Here to Elevate Your Lifestyle
                     </h2>
-                    <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto mb-8 sm:mb-10 animate-fade-in-up px-2" style={{ animationDelay: '0.2s' }}>
-                        Contact our team today to discuss your needs and discover how we can provide the perfect solution for you.
+                    <p className="text-sm sm:text-base text-white/90 max-w-2xl mx-auto mb-5 sm:mb-6 animate-fade-in-up px-2" style={{ animationDelay: '0.2s' }}>
+                        Contact our team today to discuss your needs.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                    <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-3 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                         <a
                             href="/contact"
-                            className="bg-white text-[#1A73E8] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                            className="bg-white text-[#1A73E8] px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-lg text-sm"
                         >
                             Get in Touch
                         </a>
                         <a
                             href="tel:+919666877464"
-                            className="bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white/10 transition transform hover:-translate-y-1 text-sm sm:text-base"
+                            className="bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition transform hover:-translate-y-1 text-sm"
                         >
-                            Call Now: +91 9666877464
+                            Call: +91 9666877464
                         </a>
                     </div>
                 </div>
@@ -279,11 +278,15 @@ export default function Home() {
 
 /* Reusable Service Preview Box */
 function ServiceBox({ title, image, icon, desc, gradient = "from-blue-500 to-cyan-500" }) {
+    const whatsappNumber = "919666877464";
+    const whatsappMessage = encodeURIComponent(`Hi, I'm interested in your ${title} service. Please provide more details.`);
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
     return (
-        <div className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/10 hover:border-white/20 overflow-hidden animate-fade-in-up">
+        <div className="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm shadow-lg rounded-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/10 hover:border-white/20 overflow-hidden animate-fade-in-up">
             {/* Image Section */}
             {image && (
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-28 sm:h-32 md:h-36 overflow-hidden">
                     <img
                         src={image}
                         alt={title}
@@ -297,24 +300,38 @@ function ServiceBox({ title, image, icon, desc, gradient = "from-blue-500 to-cya
 
             {/* Icon fallback (for Why Choose Us section) */}
             {!image && icon && (
-                <div className="pt-6 px-6">
-                    <div className={`relative w-16 h-16 bg-gradient-to-br ${gradient} rounded-xl flex items-center justify-center text-3xl text-white mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                <div className="pt-4 px-4">
+                    <div className={`relative w-12 h-12 bg-gradient-to-br ${gradient} rounded-lg flex items-center justify-center text-2xl text-white mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                         {icon}
                     </div>
                 </div>
             )}
 
             {/* Content Section */}
-            <div className={`p-6 ${image ? 'pt-4' : ''}`}>
-                <h3 className="relative text-lg font-bold text-white mb-3 group-hover:text-white transition-colors">{title}</h3>
-                <p className="relative text-gray-300 leading-relaxed text-sm group-hover:text-gray-200 transition-colors line-clamp-3">{desc}</p>
+            <div className={`p-3 sm:p-4 ${image ? 'pt-2 sm:pt-3' : ''}`}>
+                <h3 className="relative text-sm sm:text-base font-bold text-white mb-1.5 group-hover:text-white transition-colors line-clamp-1">{title}</h3>
+                <p className="relative text-gray-300 leading-relaxed text-xs sm:text-sm group-hover:text-gray-200 transition-colors line-clamp-2">{desc}</p>
 
-                <Link to="/services" className="relative mt-5 flex items-center text-blue-400 font-semibold group-hover:text-white transition-colors text-sm">
-                    <span>Learn more</span>
-                    <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </Link>
+                {image ? (
+                    <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative mt-2 sm:mt-3 inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold px-3 py-1.5 rounded-md transition-all text-xs shadow-md hover:shadow-lg"
+                    >
+                        <svg className="w-3 h-3 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Book Now
+                    </a>
+                ) : (
+                    <Link to="/contact" className="relative mt-2 sm:mt-3 flex items-center text-blue-400 font-semibold group-hover:text-white transition-colors text-xs">
+                        <span>Learn more</span>
+                        <svg className="w-3 h-3 ml-1.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </Link>
+                )}
             </div>
         </div>
     );
